@@ -61,6 +61,6 @@ Cela s'explique par le fait que les images représentant ces classes se ressembl
 
 # Pistes d'amélioration
 
+* **Augmentation des données** : Une manière d'éviter le sur-apprentissage est l'augmentation des données. Un retournement aléatoire des images selon l'axe vertical est dejà appliqué. Nous pourrions également appliqué un random crop (recadrage aléatoire). D'autres pistes peuvent également être envisagées comme l'ajout d'un bruit (gaussien ou poivre/sel) ou des méthodes modifiant l'histogramme de l'intensité de l'image (ne modifiant pas trop la forme des objets).
 * **Learning_rate :** Le learning_rate pourrait être ajusté pour obtenir de meilleurs performances. Après avoir testé différentes valeurs, la valeur optimale se trouverait dans l'intervalle 1e-3 et 1e-4.
-* **Augmentation des données** : Une manière d'éviter le sur-apprentissage est l'augmentation des données. Un retournement aléatoire des images selon l'axe vertical est dejà appliqué. Nous pourrions également appliqué un random crop (recadrage aléatoire).
 * **Nombre de paramètres :** Le nombre de paramètres du réseau est assez elevé (1,6 millions) par rapport à d'autres réseaux ayant des performances équivalentes (avec 100k-500k de paramètres). Ce nombre pourrait probablement être réduit sans trop impacter les performances de l'algorithme.
